@@ -36,6 +36,9 @@
 #include "a2dp_vendor_opus.h"
 #endif
 
+#if !defined(UNIT_TESTS)
+#include "audio_hal_interface/a2dp_encoding.h"
+#endif
 #include "bta/av/bta_av_int.h"
 #include "osi/include/log.h"
 #include "osi/include/properties.h"
